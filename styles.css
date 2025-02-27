@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Playfair Display";
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid pink; */
+    background-color: #fbf9f197;
+}
+
+/* ****************** Header ******************** */
+/* ********************************************** */
+.top-head {
+    background-color: #014c7a;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    color: whitesmoke;
+    border: 2px solid #011c2d;
+}
+
+.header-bar {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.logo {
+    margin-left: 20px;
+    border: 3px solid rgb(204, 204, 204);
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 130px; */
+}
+
+.header-link {
+    color: #2e2f38;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    /* display: inline-block; */
+    display: flex;
+    font-family: "Exo 2";
+}
+
+.header-link:hover {
+    transform: scale(1.07);
+    color: black;
+}
+/* ************************************** */
+
+
+/* ****************** Main Pic ****************** */
+/* ********************************************** */
+.main-pic-container {
+    position: relative;
+    display: flex;
+    height: 580px;
+}
+
+.main-pic {
+    display: flex;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 580px;
+}
+
+.cover {
+    width: 100%;
+    height: 580px;
+    background-image: linear-gradient(to right, #6f85b5b1 40%, rgba(245, 245, 245, 0.097));
+    position: absolute;
+    /* border: 3px solid blue; */
+}
+
+.icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 50px;
+    color: whitesmoke;
+    display: flex;
+    text-shadow: 
+        -2px -2px 0 #2E2F38,  
+        2px -2px 0 #2E2F38,  
+        -2px  2px 0 #2E2F38,  
+        2px  2px 0 #2E2F38;
+}
+
+/* Work on this right now */
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    /* border: 3px solid green; */
+}
+
+.main-title, .main-title2 {
+    /* border: 3px solid pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6379a8;
+    font-size: 4rem;
+    /* margin: 10px; */
+    width: 100%;
+    text-shadow: 
+        -2px -2px 0 black,  
+        2px -2px 0 black,  
+        -2px  2px 0 black,  
+        2px  2px 0 black;
+}
+
+.main-title2 {
+    /* margin-top: 90px; */
+    color: #2e2f38;
+    font-size: 4rem;
+    color: white;
+}
+
+/* ************************************** */
+
+/* ****************** Main Body ****************** */
+/* ********************************************** */
+.exterior-only-container {
+    width: 100%;
+    height: 90vh;
+    background-color: #fbf9f197;
+    display: flex;
+    
+}
+
+.exterior-only-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    /* border: 3px solid blue; */
+}
+
+.pic-and-outline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    /* border: 3px solid blue; */
+    position: relative;
+}
+
+.pic-and-outline-container img {
+    width: auto;
+    height: 350px;
+    display: flex;
+    z-index: 1;
+}
+
+.exterior-rec {
+    display: flex;
+    align-self: flex-start;
+    height: 350px;
+    width: 623px;
+    border: 4px solid #6379a8;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+}
+
+.exterior-only-description {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    border: 3px solid green;
+}
